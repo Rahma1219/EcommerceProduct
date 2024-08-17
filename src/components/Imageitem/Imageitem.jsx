@@ -50,24 +50,24 @@ function Imageitem() {
     const [ArrayOfObject, setArrayOfObject] = useState([
         {
             id: 1,
-            Image: "/public/images/image-product-1.jpg",
-            thumbnail: "/public/images/image-product-1-thumbnail.jpg"
+            Image: "/images/image-product-1.jpg",
+            thumbnail: "/images/image-product-1-thumbnail.jpg"
 
         },
         {
             id: 2,
-            Image: "/public/images/image-product-2.jpg",
-            thumbnail: "/public/images/image-product-2-thumbnail.jpg"
+            Image: "/images/image-product-2.jpg",
+            thumbnail: "/images/image-product-2-thumbnail.jpg"
         },
         {
             id: 3,
-            Image: "/public/images/image-product-3.jpg",
-            thumbnail: "/public/images/image-product-3-thumbnail.jpg"
+            Image: "/images/image-product-3.jpg",
+            thumbnail: "/images/image-product-3-thumbnail.jpg"
         },
         {
             id: 4,
-            Image: "/public/images/image-product-4.jpg",
-            thumbnail: "/public/images/image-product-4-thumbnail.jpg"
+            Image: "/images/image-product-4.jpg",
+            thumbnail: "/images/image-product-4-thumbnail.jpg"
         }
     ])
 
