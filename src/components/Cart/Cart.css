@@ -1,0 +1,39 @@
+/* #box2{
+    position: relative;
+}
+
+#checkbtn{
+    background-color:  hsl(26, 100%, 55%);
+    height: 50px;
+    width: 90%;
+    border-radius: 10px;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    font-weight: bold;
+}
+#image{
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    /* position: absolute;
+    top: 80px;
+    left: 20px; 
+
+}
+.dataofcart{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:20px 10px;
+}
+#text3 p {
+    color: grey;
+    line-height: 25px;
+}
+
+#p2{
+    font-weight: bold;
+    color: black;
+    margin-left: 5px;
+} */

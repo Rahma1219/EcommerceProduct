@@ -1,0 +1,204 @@
+li .thumbnail {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+     gap: 20px;
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #fff;
+    list-style: none;
+
+
+
+}
+
+
+#edit {
+    margin-left: -35px;
+    position: relative;
+}
+
+.thumbnail:hover {
+
+    border: 3px solid hsl(26, 100%, 55%);
+    opacity: 50%;
+
+}
+
+.boximage {
+    position: relative;
+
+}
+
+
+
+.mainimage img {
+    width: 450px;
+    height: 400px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.arrow img {
+    width: 10px;
+    height: 10px;
+
+}
+
+.nextbtn {
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 170px;
+    padding: 10px 13px;
+    margin-right: 10px;
+
+
+}
+
+#b {
+    background-color: black;
+}
+
+.prebtn {
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 170px;
+    left: 60px;
+    padding: 10px 13px;
+    margin-left: 10px;
+
+}
+
+.arrow {
+    display: none;
+
+}
+
+#img2 {
+    display: none;
+    width: 450px;
+    height: 400px;
+    position: relative;
+
+    border-radius: 10px;
+    /* opacity:unset;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+
+}
+
+/* #sec3{
+    display: none
+} */
+
+
+#close{
+
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 30px;
+     cursor: pointer;
+}
+
+.bg {
+    background-color: rgba(0, 0, 0, 0.598);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 100%;
+    height: 100%;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.boximage {
+    position: relative;
+}
+
+.box {
+    display: none;
+
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .content {
+        gap: 0;
+    }
+
+    .sec1 {
+
+        margin-top: 20px;
+
+    }
+
+    .sec2 {
+        margin-top: 0px;
+        padding:0 70px;
+    }
+
+    li .thumbnail {
+        display: none;
+    }
+
+    .mainimage {
+        padding: 0;
+        margin: 0;
+        width: 450px;
+        border-radius: 0px;
+
+    }
+
+
+
+    .arrow {
+        display: block;
+
+    }
+
+    #img2 {
+
+        display: block;
+        width: 450px;
+        height: 350px;
+        position: relative;
+        margin: 0 auto;
+       left: 40px;
+
+        border-radius: 0;
+
+    }
+   
+
+    .mainimage {
+        display: none;
+        
+
+
+    }
+    .mainimage img {
+        width: 450px;
+        height: 400px;
+        border-radius: 10px;
+        cursor: pointer;
+        position: relative;
+    
+    }
+}
