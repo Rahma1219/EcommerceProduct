@@ -54,11 +54,10 @@ li .thumbnail {
     background-color: white;
     border-radius: 50%;
     position: absolute;
-    right: 0;
+    right: 20px;
     top: 170px;
     padding: 10px 13px;
-    margin-right: 10px;
-
+    /* margin-right: 10px; */
 
 }
 
@@ -71,9 +70,9 @@ li .thumbnail {
     border-radius: 50%;
     position: absolute;
     top: 170px;
-    left: 60px;
+    left: 70px;
     padding: 10px 13px;
-    margin-left: 10px;
+
 
 }
 
@@ -151,20 +150,20 @@ li .thumbnail {
 
     .sec2 {
         margin-top: 0px;
-        padding:0 70px;
+        /* padding:0 70px; */
     }
 
     li .thumbnail {
         display: none;
     }
 
-    .mainimage {
+    /* .mainimage {
         padding: 0;
         margin: 0;
         width: 450px;
         border-radius: 0px;
 
-    }
+    } */
 
 
 
@@ -176,11 +175,11 @@ li .thumbnail {
     #img2 {
 
         display: block;
-        width: 450px;
-        height: 350px;
+        width: 480px;
+        height: 400px;
         position: relative;
         margin: 0 auto;
-       left: 40px;
+       /* left: 40px; */
 
         border-radius: 0;
 
@@ -193,12 +192,5 @@ li .thumbnail {
 
 
     }
-    .mainimage img {
-        width: 450px;
-        height: 400px;
-        border-radius: 10px;
-        cursor: pointer;
-        position: relative;
-    
-    }
+  
 }
