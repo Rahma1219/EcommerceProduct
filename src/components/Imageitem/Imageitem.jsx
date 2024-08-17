@@ -1,8 +1,8 @@
 import { useState ,useEffect } from 'react'
 import './Imageitem.css'
-import Next from '/public/images/icon-next.svg'
-import Previous from '/public/images/icon-previous.svg'
-import exit from '../../../public/images/icon-close.svg'
+import Next from '/images/icon-next.svg'
+import Previous from '/images/icon-previous.svg'
+import exit from '/images/icon-close.svg'
 
 
 function Background({ ArrayOfObject, slide, nextSlide, previousSlide, }) {
