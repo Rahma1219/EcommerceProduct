@@ -1,6 +1,9 @@
+import ContentBody from "../ContentBody/ContentBody"
+
 function Collections(){
-    <div>
-        <h1>Collections</h1>
-    </div>
+    return (
+   <ContentBody></ContentBody>
+)
+    
 }
 export default Collections

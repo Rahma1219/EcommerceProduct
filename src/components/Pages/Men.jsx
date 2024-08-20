@@ -1,6 +1,10 @@
 function Men(){
-    <div>
+    return(
+        <div>
         <h1>Men</h1>
     </div>
+
+    )
+   
 }
 export default Men

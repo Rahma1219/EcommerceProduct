@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 import './Navbar.css'
 import Logo from '/images/logo.svg'
 import cart from '/images/icon-cart.svg'
@@ -37,11 +37,13 @@ function Navbar() {
 
                 <ul className='Sidebar'>
                     <li onClick={hiddenSidebar} id='closeicon'><a href="#"><img src={CLoseIcon}></img></a></li>
-                    <li><a href="#Collections">Collections</a></li>
-                    <li><a href="#Men ">Men </a></li>
-                    <li><a href="#Women">Women</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#Contact">Contact</a></li>
+                    <li><Link to='/collections'>Collections</Link></li>
+                    <li><Link to='/men'>Men</Link></li>
+                    <li><Link to='/women'>Women</Link></li>
+                    <li><Link to='/about'>About</Link></li>
+                    <li> <Link to='/contact'>Contact</Link></li>
+
+
 
                 </ul>) : null
             }
@@ -52,11 +54,21 @@ function Navbar() {
 
                     <img src={Logo} id='logo'></img>
                     <div className='leftnav'>
-                        <li className='hide'><a id='link' href="#Collections">Collections</a></li>
-                        <li className='hide'><a href="#Men ">Men </a></li>
-                        <li className='hide'><a href="#Women">Women</a></li>
-                        <li className='hide'><a href="#about">About</a></li>
-                        <li className='hide'><a href="#Contact">Contact</a></li>
+                        <li className='hide'>
+                            <Link to='/collections'>Collections</Link>
+                        </li>
+                        <li className='hide'>
+                            <Link to='/men'>Men</Link>
+                        </li>
+                        <li className='hide'>
+                            <Link to='/women'>Women</Link>
+                        </li>
+                        <li className='hide'>
+                            <Link to='/about'>About</Link>
+                        </li>
+                        <li className='hide'>
+                            <Link to='/contact'>Contact</Link>
+                        </li>
                     </div>
 
 
