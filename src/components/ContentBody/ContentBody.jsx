@@ -6,7 +6,6 @@ import { useState } from 'react'
 import Imageitem from '../Imageitem/Imageitem'
 
 function ContentBody() {
-// const { handleAddtoCart } = useGlobalContext() 
     const [count, setcount] = useState(0);
 
 
@@ -17,24 +16,23 @@ function ContentBody() {
     function Minus() {
         let newValue = count - 1
         setcount(newValue)
-        if (count<=0) setcount(0)
+        if (count <= 0) setcount(0)
     }
-    
-    // function handleAddtoCart(){
-    //     // setDivcart(true)
 
-    // }
 
-   
+
+
+
 
     return (
         <div className='content'>
             <div className='sec1'>
-            <Imageitem></Imageitem>
+                <Imageitem></Imageitem>
 
             </div>
 
             <div className='sec2'>
+                <div className='text'>
                 <div>
                     <h3 id='heading'>Sneaker Company</h3>
                     <h1 id='title'>Fall Limited Edition Sneakers</h1>
@@ -43,34 +41,35 @@ function ContentBody() {
                         <h1>$125.00</h1>
                         <span id='discount'>50%</span>
                     </div>
-
                     <p id='price2'><s>$250.00</s></p>
-
                 </div>
                 <div className='cart2'>
                     <div className="counter">
                         <button className="b">
-                        <div>
+                            <div>
                                 <button onClick={Minus} id='btn1'><img src={minus} /></button>
                             </div>
-                            
+
                             <div>
                                 <strong id="count" >{count}</strong>
                             </div>
                             <div>
                                 <button onClick={Add} id="btn2"><img src={Plus} /> </button>
                             </div>
-                           
+
                         </button>
 
                     </div>
                     <div className='cartbtn'>
-                   
-                    <button><img src={Cart}></img> Add to cart</button>
+
+                        <button><img src={Cart}></img> Add to cart</button>
 
                     </div>
-                 
+
                 </div>
+
+                </div>
+                
 
 
             </div>

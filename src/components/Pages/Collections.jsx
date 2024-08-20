@@ -1,6 +1,8 @@
+import ContentBody from "../ContentBody/ContentBody"
+
 function Collections(){
     return (
-    <h1>Collections</h1>
+   <ContentBody></ContentBody>
 )
     
 }

@@ -34,25 +34,26 @@ function Navbar() {
     return (
         <nav className='navbar'>
             {showSidebar == true ? (
-
-                <ul className='Sidebar'>
-                    <li onClick={hiddenSidebar} id='closeicon'><a href="#"><img src={CLoseIcon}></img></a></li>
-                    <li><Link to='/collections'>Collections</Link></li>
-                    <li><Link to='/men'>Men</Link></li>
-                    <li><Link to='/women'>Women</Link></li>
-                    <li><Link to='/about'>About</Link></li>
-                    <li> <Link to='/contact'>Contact</Link></li>
-
-
-
-                </ul>) : null
+                <div id="bg3"> 
+                    <ul className='Sidebar'>
+                        <li onClick={hiddenSidebar} id='closeicon'><a href="#"><img src={CLoseIcon}></img></a></li>
+                        <li><Link to='/collections'>Collections</Link></li>
+                        <li><Link to='/men'>Men</Link></li>
+                        <li><Link to='/women'>Women</Link></li>
+                        <li><Link to='/about'>About</Link></li>
+                        <li> <Link to='/contact'>Contact</Link></li>
+                    </ul>
+                </div>
+            ) : null
             }
 
             <div className='nav'>
                 <ul>
+                    <div className="leftnav2">
                     <li onClick={ShowSidebar} className='menubtn'><a href="#" id='showicon'><img id='dd' src={MenuIcon}></img></a></li>
-
                     <img src={Logo} id='logo'></img>
+                    </div>
+                 
                     <div className='leftnav'>
                         <li className='hide'>
                             <Link to='/collections'>Collections</Link>
@@ -79,9 +80,6 @@ function Navbar() {
                                 <div id='box'>
                                     <p id='hrcart'>Cart</p>
                                     <h3 id='text'>Your cart is empty</h3>
-
-
-
                                 </div>
                             </div>
 
@@ -99,17 +97,11 @@ function Navbar() {
                             {/* <Cart></Cart> */}
 
                         </li>
-
-
-
                         <img src={Man} alt="avatar" id='man' />
                     </div>
                 </ul>
 
             </div>
-
-
-            {/* <button class="toggle-sidebar"><img src={MenuIcon}></img></button> */}
         </nav>
 
 

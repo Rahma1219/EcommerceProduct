@@ -131,8 +131,8 @@ function Imageitem() {
                         <div key={index} className={slide === index + 1 ? "boximage" : "box"}>
                             <img onClick={() => setShowdiv(true)} src={item.Image} className='mainimage' id='img2' ></img>
                             <ul className='arrow'>
-                                <li><button onClick={nextSlide} className='nextbtn'><img src={Next} alt="" /></button></li>
-                                <li><button onClick={previousSlide} className='prebtn'><img src={Previous} alt="" /></button></li>
+                                <li><button onClick={nextSlide} className='nextbtn1'><img src={Next} alt="" /></button></li>
+                                <li><button onClick={previousSlide} className='prebtn1'><img src={Previous} alt="" /></button></li>
                             </ul>
 
                         </div>

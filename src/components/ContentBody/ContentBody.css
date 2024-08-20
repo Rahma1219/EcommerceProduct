@@ -1,5 +1,5 @@
 .content {
-    width: 100%;
+    /* width: 100%; */
     display: grid;
     grid-template-columns: 50% 50%;
     justify-content: center;
@@ -7,32 +7,28 @@
     flex-wrap: wrap;
     gap: 100px;
     height: 100%;
-
 }
 
-
-.sec1{
-
+.sec1 ,.sec2{
   margin-top: 80px ;
 }
 
-.sec2 {
-  margin-top: 80px;
 
-
-  
-}
 #title{
     width: 400px;
     padding: 0 0 25px 0;
 }
+
 #para {
     max-width: 400px;
     line-height: 30px;
+    color: grey;
+    font-size: 16px;
 }
+
 #heading{
     color: grey;
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
     word-spacing: 2px;
     padding-top: 40px;
@@ -42,14 +38,12 @@
     width: 100px;
     height: 100px;
     border-radius: 10px;
-
 }
 
-#img {
-    background-color: aquamarine;
+/* #img {
     width: 400px;
     height: 400px;
-}
+} */
 
 #btn1 ,#btn2 {
     display: flex;
@@ -59,10 +53,6 @@
     cursor: pointer;
     background-color: transparent;
     width: 60px;
-
-
-
-
 }
 
 .b #count {
@@ -97,7 +87,6 @@
     padding: 15px 60px;
     font-size: 15px;
     text-align: center;
-   
     color: rgba(0, 0, 0, 0.696);
     cursor: pointer;
     margin-top: 20px;
@@ -120,6 +109,7 @@ background-color: hsla(26, 100%, 55%, 0.616);
 p,h1 {
     margin: 0;
 }
+
 #price{
     display: flex;
     align-items: center;
@@ -129,7 +119,8 @@ p,h1 {
 #price2{
     color: gray;
     font-weight: 600;
-    padding: 10px 0;
+    /* padding: 10px 0; */
+    display: block;
   
 }
 #discount{
@@ -146,43 +137,58 @@ button{
 }
 
 @media only screen and (max-width: 800px) {
+    
    .cart2{
     display: flex;
     flex-direction: column;
     gap: 0;
    }
+   
    .b{
-    width:370px;
+    width:100%;
     display: flex;
     justify-content: space-between;
    }
-   .cartbtn {
+   
+   /* .cartbtn {
     width: 80%;
-   }
+   } */
   
 
-   .sec2 {
-    margin: 0;
-   width: 310px;
-  
-    
+.sec2 {
+   /* width:360px ; */
+   margin-top: 0;
+   box-sizing:content-box; 
+   /* padding:  0 30px; */
   }
-  /* .navbar{
-    width: 350px;
-  } */
+  .text{
+    /* padding: 0 20px; */
+    margin: 0 auto;
+    padding-left: 10px;
+  }
+  #title ,#para{
+    width: 360px;
+    padding-left: 10px;
+  }
+  #heading{
+    padding-left: 10px;
+    padding-top: 0px;
+}
+#price{
+    padding-left: 10px;
+}
+#price2{
+    padding-left: 10px;
+}
+
 
   .content {
-    width: 100%;
-    display: grid;
-   justify-content: center;
-   margin: 0 auto;
+  
     display: flex;
     flex-wrap: wrap;
     gap: 0px;
-    height: 100%;
 
 }
-
 
 
   }
