@@ -136,7 +136,7 @@ button{
     cursor: pointer;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
     
    .cart2{
     display: flex;
@@ -156,30 +156,22 @@ button{
   
 
 .sec2 {
-   /* width:360px ; */
+
    margin-top: 0;
    box-sizing:content-box; 
-   /* padding:  0 30px; */
   }
   .text{
-    /* padding: 0 20px; */
+
     margin: 0 auto;
     padding-left: 10px;
   }
   #title ,#para{
-    width: 360px;
-    padding-left: 10px;
+    width: 330px;
   }
   #heading{
-    padding-left: 10px;
     padding-top: 0px;
 }
-#price{
-    padding-left: 10px;
-}
-#price2{
-    padding-left: 10px;
-}
+
 
 
   .content {
