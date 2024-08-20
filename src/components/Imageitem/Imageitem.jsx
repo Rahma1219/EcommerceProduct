@@ -1,44 +1,11 @@
-import { useState ,useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import './Imageitem.css'
 import Next from '/images/icon-next.svg'
 import Previous from '/images/icon-previous.svg'
 import exit from '/images/icon-close.svg'
 
 
-function Background({ ArrayOfObject, slide, nextSlide, previousSlide, }) {
 
-    const [showdiv, setShowdiv] = useState(false)
-
-    function Showimage() {
-        // let Finalresult = !showdiv
-        setShowdiv(false)
-
-    }
-
-    return (
-        <div className='bg' >
-            <div className='eee'>
-                {ArrayOfObject.map((item, index) => (
-                    <div key={index} className={slide === index + 1 ? "boximage" : "box"} >
-                         
-                         <img src={exit} id='close' onClick={Showimage}></img>
-                        <img src={item.Image} className='mainimage  ' id='img2'></img>
-                       
-                       
-                        <ul className='arrow'>
-                            <li><button onClick={nextSlide} className='nextbtn'><img src={Next} alt="" /></button></li>
-                            <li><button onClick={previousSlide} className='prebtn'><img src={Previous} alt="" /></button></li>
-                        </ul>
-
-                    </div>
-                ))}
-            </div>
-        </div>
-
-    )
-
-
-}
 
 
 
@@ -71,13 +38,13 @@ function Imageitem() {
         }
     ])
 
-  
+
     const [showdiv, setShowdiv] = useState(false)
     const [value, setValue] = useState(0)
     const [slide, setSlide] = useState(1)
 
     // const {Image} = ArrayOfObject[value]
-    const {Image} = ArrayOfObject[value]
+    const { Image } = ArrayOfObject[value]
 
     function nextSlide() {
         if (slide !== ArrayOfObject.length) {
@@ -93,22 +60,61 @@ function Imageitem() {
         } else if (slide === 1) {
             setSlide(ArrayOfObject.length)
         }
+
     }
 
-  
+
+
+
+    function Background({ ArrayOfObject, slide, nextSlide, previousSlide }) {
+
+
+
+
+        return (
+
+            <div className='bg' >
+                <div className='eee'>
+
+
+                    {ArrayOfObject.map((item, index) => (
+
+                        <div key={index} className={slide === index + 1 ? "boximage" : "box"} >
+
+                            <img src={exit} id='close' onClick={() => setShowdiv(false)} ></img>
+                            <img src={item.Image} className='arrowimage' ></img>
+                           
+
+                            <ul className='arrow'>
+                                <li><button onClick={nextSlide} className='nextbtn'><img src={Next} alt="" /></button></li>
+                                <li><button onClick={previousSlide} className='prebtn'><img src={Previous} alt="" /></button></li>
+                            </ul>
+                            
+
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+        )
+
+
+    }
+
+
 
 
     return (
         <>
 
-            {showdiv == true?
+            {showdiv == true ?
                 (<Background
                     ArrayOfObject={ArrayOfObject}
                     slide={slide}
                     nextSlide={nextSlide}
                     previousSlide={previousSlide}
                     setShowdiv={setShowdiv} />
-                ):null}
+                ) : null}
 
 
 
@@ -123,7 +129,7 @@ function Imageitem() {
                 <div id='sec3'>
                     {ArrayOfObject.map((item, index) => (
                         <div key={index} className={slide === index + 1 ? "boximage" : "box"}>
-                            <img onClick={() => setShowdiv(true)} src={item.Image} className='mainimage'  id='img2' ></img>
+                            <img onClick={() => setShowdiv(true)} src={item.Image} className='mainimage' id='img2' ></img>
                             <ul className='arrow'>
                                 <li><button onClick={nextSlide} className='nextbtn'><img src={Next} alt="" /></button></li>
                                 <li><button onClick={previousSlide} className='prebtn'><img src={Previous} alt="" /></button></li>

@@ -1,9 +1,9 @@
 li .thumbnail {
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     flex-direction: column;
-     gap: 20px;
+    gap: 20px;
     width: 90px;
     height: 90px;
     cursor: pointer;
@@ -33,6 +33,10 @@ li .thumbnail {
 
 }
 
+#sec3 {
+    display: none;
+}
+
 
 
 .mainimage img {
@@ -54,8 +58,8 @@ li .thumbnail {
     background-color: white;
     border-radius: 50%;
     position: absolute;
-    right: 20px;
-    top: 170px;
+    right: -20px;
+    top: 45%;
     padding: 10px 13px;
     /* margin-right: 10px; */
 
@@ -69,24 +73,30 @@ li .thumbnail {
     background-color: white;
     border-radius: 50%;
     position: absolute;
-    top: 170px;
-    left: 70px;
+    top: 45%;
+    left: -20px;
     padding: 10px 13px;
 
 
 }
 
-.arrow {
-    display: none;
+.arrowimage {
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
 
 }
 
-#img2 {
+/* .arrow {
     display: none;
+
+} */
+
+#img2 {
+
     width: 450px;
     height: 400px;
     position: relative;
-
     border-radius: 10px;
     /* opacity:unset;
     display: flex;
@@ -95,29 +105,38 @@ li .thumbnail {
 
 }
 
+
 /* #sec3{
     display: none
 } */
 
 
-#close{
+#close {
 
-    width: 20px;
-    height: 20px;
-    float: right;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    right: 35%;
+    top: 8%;
+    /* float: right;
     margin-right: 20px;
-    margin-bottom: 30px;
-     cursor: pointer;
+    margin-bottom: 60px; */
+    cursor: pointer;
+}
+
+#close {
+
+    color: blueviolet;
 }
 
 .bg {
     background-color: rgba(0, 0, 0, 0.598);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    opacity: 100%;
+    /* opacity: 100%; */
     height: 100%;
     z-index: 50;
     display: flex;
@@ -126,9 +145,9 @@ li .thumbnail {
 
 }
 
-.boximage {
+/* .boximage {
     position: relative;
-}
+} */
 
 .box {
     display: none;
@@ -146,6 +165,10 @@ li .thumbnail {
 
         margin-top: 20px;
 
+    }
+
+    #sec3 {
+        display: block;
     }
 
     .sec2 {
@@ -179,18 +202,18 @@ li .thumbnail {
         height: 400px;
         position: relative;
         margin: 0 auto;
-       /* left: 40px; */
+        /* left: 40px; */
 
         border-radius: 0;
 
     }
-   
+
 
     .mainimage {
         display: none;
-        
+
 
 
     }
-  
+
 }
